@@ -22,6 +22,7 @@
 
 .header__nav {
   width: 70%;
+  display: none;
 }
 
 .nav__ul {
@@ -45,6 +46,12 @@
 .phone__link {
   font-size: 2.2em;
   color: white;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.phone__link:hover {
+  color: orange;
 }
 
 .main {
@@ -68,7 +75,7 @@
 .main__video {
   min-width: 100%;
   min-height: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: -1;
@@ -96,6 +103,8 @@
   width: 100%;
   font-size: 7.2em;
   color: white;
+  font-family: "Captureit";
+  font-weight: normal;
   text-align: center;
   background-image: url(/assets/images/title-bg.png);
   background-repeat: no-repeat;
@@ -122,6 +131,14 @@
   cursor: pointer;
   -webkit-transform: skewX(-20deg);
           transform: skewX(-20deg);
+}
+
+@font-face {
+  font-family: "Captureit";
+  src: url("/assets/fonts/capture-it.eot");
+  src: url("/assets/fonts/capture-it.eot?#iefix") format("eot"), url("/assets/fonts/capture-it.woff") format("woff"), url("/assets/fonts/capture-it.ttf") format("truetype"), url("/assets/fonts/capture-it.svg#webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
