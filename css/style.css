@@ -554,6 +554,36 @@
   height: 600px;
 }
 
+.footer {
+  background-color: black;
+  color: white;
+  height: 100px;
+}
+
+.footer__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.footer__text {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.footer__phone {
+  min-width: 180px;
+  text-align: right;
+}
+
 * {
   margin: 0;
   padding: 0;

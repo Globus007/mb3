@@ -1,0 +1,23 @@
+.footer {
+  background-color: black;
+  color: white;
+  height: 100px;
+}
+
+.footer__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer__text {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.footer__phone {
+  min-width: 180px;
+  text-align: right;
+}
