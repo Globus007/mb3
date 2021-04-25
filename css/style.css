@@ -532,6 +532,28 @@
   max-width: 650px;
 }
 
+.map__container {
+  margin-top: 50px;
+}
+
+.map__title {
+  font-size: 4em;
+  font-family: "Captureit";
+  font-weight: normal;
+  text-align: center;
+}
+
+.map__text {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.6em;
+}
+
+.map__iframe {
+  width: 100%;
+  height: 600px;
+}
+
 * {
   margin: 0;
   padding: 0;
