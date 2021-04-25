@@ -1,0 +1,39 @@
+.media {
+  margin-top: 30px;
+  min-height: 800px;
+  background: url(/assets/images/line-bg.png) 0 -30% no-repeat,
+    url(/assets/images/line-bg.png) 0 130% no-repeat,
+    url(/assets/images/media-bg.jpg) no-repeat;
+  background-size: contain, contain, cover;
+}
+
+.media__container {
+  padding: 1px;
+}
+
+.media__content {
+  margin-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media__title {
+  width: 45%;
+  font-size: 7.2em;
+  font-family: "Captureit";
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.media__video {
+  width: 55%;
+}
+
+.media__iframe {
+  object-fit: contain;
+  width: 560px;
+  height: 315px;
+}
