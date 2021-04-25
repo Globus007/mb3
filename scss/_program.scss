@@ -1,0 +1,74 @@
+.program {
+  margin-top: 30px;
+  min-height: 1000px;
+  background: url(/assets/images/line-bg.png) 0 -30% no-repeat,
+    url(/assets/images/line-bg.png) 0 130% no-repeat,
+    url(/assets/images/program-bg.jpg) no-repeat;
+  background-size: contain, contain, cover;
+}
+
+.program__pins {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.program__pin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program__pin-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 80px;
+  font-size: 1.8em;
+  color: white;
+  text-align: center;
+  background-image: url(/assets/images/pin-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.program__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.program__title {
+  width: 60%;
+  font-size: 7.2em;
+  font-family: "Captureit";
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.program__text {
+  width: 40%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 100px;
+  min-height: 350px;
+
+  background: url(/assets/images/program-bg.png) no-repeat;
+  background-size: cover;
+  border: solid black 2px;
+}
+
+.program__artice {
+  font-size: 1.8em;
+}
+
+.program__artice:first-child {
+  margin-bottom: 20px;
+}
+
+.program__h3 {
+  margin-bottom: 10px;
+}
