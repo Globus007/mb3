@@ -132,6 +132,9 @@
 .btn {
   width: 320px;
   height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   background-color: orange;
   text-transform: uppercase;
   outline: none;
@@ -352,7 +355,7 @@
 
 .schedule {
   margin-top: 30px;
-  min-height: 850px;
+  min-height: 900px;
   background: url(/assets/images/line-bg.png) 0 -30% no-repeat, url(/assets/images/line-bg.png) 0 130% no-repeat, url(/assets/images/schedule-bg.jpg) no-repeat;
   background-size: contain, contain, cover;
 }
@@ -411,6 +414,60 @@
 
 .schedule__li--info {
   font-weight: normal;
+}
+
+.schedule__btn {
+  margin-top: 40px;
+}
+
+.price__container {
+  margin-top: 50px;
+}
+
+.price__title {
+  margin-bottom: 50px;
+  font-size: 4em;
+  font-family: "Captureit";
+  font-weight: normal;
+  text-align: center;
+}
+
+.price__text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.price__number {
+  font-size: 1.8em;
+  color: orange;
+  font-weight: bold;
+}
+
+.price__ol,
+.price__ul {
+  font-size: 1.8em;
+}
+
+.price__li {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.price__h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.price__link {
+  color: orange;
+}
+
+.price__btn {
+  margin-top: 40px;
 }
 
 * {

@@ -1,6 +1,6 @@
 .schedule {
   margin-top: 30px;
-  min-height: 850px;
+  min-height: 900px;
   background: url(/assets/images/line-bg.png) 0 -30% no-repeat,
     url(/assets/images/line-bg.png) 0 130% no-repeat,
     url(/assets/images/schedule-bg.jpg) no-repeat;
@@ -56,4 +56,8 @@
 
 .schedule__li--info {
   font-weight: normal;
+}
+
+.schedule__btn {
+  margin-top: 40px;
 }
