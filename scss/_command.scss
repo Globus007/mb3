@@ -1,0 +1,44 @@
+.command__container {
+  margin-top: 50px;
+}
+
+.command__title {
+  font-size: 4em;
+  font-family: "Captureit";
+  font-weight: normal;
+  text-align: center;
+}
+
+.command__content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.command__card {
+  width: 20%;
+}
+
+.command__img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.command__h3 {
+  margin: 10px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.command__li {
+  font-size: 1.6em;
+}
+
+.command__link {
+  display: inline-block;
+  margin-top: 10px;
+  color: orange;
+  font-size: 1.6em;
+}
