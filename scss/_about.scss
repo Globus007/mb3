@@ -1,0 +1,54 @@
+.about {
+  background-color: white;
+  padding: 0.1px;
+}
+
+.about__container {
+  margin-top: 50px;
+}
+
+.about__title {
+  font-size: 4em;
+  font-family: "Captureit";
+  font-weight: normal;
+  text-align: center;
+}
+
+.about__content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+
+.about__video {
+  width: 50%;
+}
+
+.about__iframe {
+  object-fit: contain;
+  width: 560px;
+  height: 315px;
+}
+
+.about__info {
+  width: 50%;
+}
+
+.about__h3 {
+  font-size: 2em;
+}
+
+.about__text {
+  margin-top: 20px;
+  font-size: 1.8em;
+}
+
+.about__ul {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.about__li {
+  font-size: 1.8em;
+}

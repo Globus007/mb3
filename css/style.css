@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Captureit";
+  src: url("/assets/fonts/capture-it.eot");
+  src: url("/assets/fonts/capture-it.eot?#iefix") format("eot"), url("/assets/fonts/capture-it.woff") format("woff"), url("/assets/fonts/capture-it.ttf") format("truetype"), url("/assets/fonts/capture-it.svg#webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .header {
   width: 100%;
   height: 80px;
@@ -75,7 +83,7 @@
 .main__video {
   min-width: 100%;
   min-height: 100%;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
@@ -133,12 +141,142 @@
           transform: skewX(-20deg);
 }
 
-@font-face {
+.about {
+  background-color: white;
+  padding: 0.1px;
+}
+
+.about__container {
+  margin-top: 50px;
+}
+
+.about__title {
+  font-size: 4em;
   font-family: "Captureit";
-  src: url("/assets/fonts/capture-it.eot");
-  src: url("/assets/fonts/capture-it.eot?#iefix") format("eot"), url("/assets/fonts/capture-it.woff") format("woff"), url("/assets/fonts/capture-it.ttf") format("truetype"), url("/assets/fonts/capture-it.svg#webfont") format("svg");
   font-weight: normal;
-  font-style: normal;
+  text-align: center;
+}
+
+.about__content {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.about__video {
+  width: 50%;
+}
+
+.about__iframe {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 560px;
+  height: 315px;
+}
+
+.about__info {
+  width: 50%;
+}
+
+.about__h3 {
+  font-size: 2em;
+}
+
+.about__text {
+  margin-top: 20px;
+  font-size: 1.8em;
+}
+
+.about__ul {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.about__li {
+  font-size: 1.8em;
+}
+
+.program {
+  margin-top: 30px;
+  height: 800px;
+  background: url(/assets/images/line-bg.png) 0 -30% no-repeat, url(/assets/images/line-bg.png) 0 130% no-repeat, url(/assets/images/program-bg.jpg) no-repeat;
+  background-size: contain, contain, cover;
+}
+
+.program__pins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.program__pin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.program__pin-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 230px;
+  height: 80px;
+  font-size: 1.8em;
+  color: white;
+  text-align: center;
+  background-image: url(/assets/images/pin-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.program__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.program__title {
+  width: 50%;
+  font-size: 7.2em;
+  font-family: "Captureit";
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+.program__text {
+  width: 50%;
 }
 
 * {
@@ -156,5 +294,6 @@ a {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }

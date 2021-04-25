@@ -1,7 +1,9 @@
+@import "font";
 @import "header";
 @import "main";
 @import "btn";
-@import "font";
+@import "about";
+@import "program";
 
 * {
   margin: 0;
@@ -18,5 +20,6 @@ a {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
