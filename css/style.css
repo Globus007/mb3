@@ -350,6 +350,69 @@
   font-size: 1.6em;
 }
 
+.schedule {
+  margin-top: 30px;
+  min-height: 850px;
+  background: url(/assets/images/line-bg.png) 0 -30% no-repeat, url(/assets/images/line-bg.png) 0 130% no-repeat, url(/assets/images/schedule-bg.jpg) no-repeat;
+  background-size: contain, contain, cover;
+}
+
+.schedule__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.schedule__title {
+  width: 60%;
+  font-size: 7.2em;
+  font-family: "Captureit";
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.schedule__text {
+  width: 40%;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding: 100px;
+  min-height: 350px;
+  background: url(/assets/images/program-bg.png) no-repeat;
+  background-size: cover;
+  border: solid black 2px;
+}
+
+.schedule__ul {
+  list-style: none;
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.schedule__li + .schedule__li {
+  margin-top: 10px;
+}
+
+.schedule__li + .schedule__li--info {
+  margin-top: 40px;
+}
+
+.schedule__li--info + .schedule__li--info {
+  margin-top: 5px;
+}
+
+.schedule__li--info {
+  font-weight: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
