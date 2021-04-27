@@ -12,4 +12,8 @@
 
 .foto__image {
   max-width: 650px;
+
+  @media (max-width: $sm) {
+    width: 100%;
+  }
 }

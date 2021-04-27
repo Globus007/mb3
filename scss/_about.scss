@@ -18,21 +18,37 @@
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
-  column-gap: 50px;
+  gap: 50px;
+
+  @media (max-width: $lg) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .about__video {
   width: 50%;
+  @media (max-width: $lg) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .about__iframe {
   object-fit: contain;
   width: 560px;
   height: 315px;
+
+  @media (max-width: $sm) {
+    width: 100%;
+  }
 }
 
 .about__info {
   width: 50%;
+  @media (max-width: $sm) {
+    width: 95%;
+  }
 }
 
 .about__h3 {

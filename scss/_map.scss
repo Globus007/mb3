@@ -13,6 +13,10 @@
   max-width: 800px;
   margin: 20px auto;
   font-size: 1.6em;
+
+  @media (max-width: $sm) {
+    width: 95%;
+  }
 }
 
 .map__iframe {

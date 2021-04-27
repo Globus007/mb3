@@ -5,6 +5,10 @@
     url(/assets/images/line-bg.png) 0 130% no-repeat,
     url(/assets/images/program-bg.jpg) no-repeat;
   background-size: contain, contain, cover;
+
+  @media (max-width: $sm) {
+    min-height: unset;
+  }
 }
 
 .program__pins {
@@ -12,8 +16,11 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $lg) {
     flex-wrap: wrap;
+  }
+  @media (max-width: $sm) {
+    display: none;
   }
 }
 
@@ -41,6 +48,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: $lg) {
+    flex-wrap: wrap;
+  }
 }
 
 .program__title {
@@ -51,6 +62,11 @@
   font-weight: normal;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
+
+  @media (max-width: $lg) {
+    margin-top: 50px;
+    width: 100%;
+  }
 }
 
 .program__text {
@@ -63,10 +79,23 @@
   background: url(/assets/images/program-bg.png) no-repeat;
   background-size: cover;
   border: solid black 2px;
+
+  @media (max-width: $lg) {
+    width: 100%;
+  }
+  @media (max-width: $sm) {
+    padding-left: 0;
+    padding-right: 0;
+    background-position: center;
+  }
 }
 
 .program__artice {
   font-size: 1.8em;
+
+  @media (max-width: $lg) {
+    text-align: center;
+  }
 }
 
 .program__artice:first-child {

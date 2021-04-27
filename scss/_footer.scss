@@ -16,8 +16,12 @@
   max-width: 700px;
   text-align: center;
   font-size: 1.4em;
-}
 
-.footer__phone {
-  text-align: right;
+  @media (max-width: $lg) {
+    font-size: 1em;
+    max-width: 300px;
+  }
+  @media (max-width: $sm) {
+    display: none;
+  }
 }

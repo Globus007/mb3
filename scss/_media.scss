@@ -5,6 +5,10 @@
     url(/assets/images/line-bg.png) 0 130% no-repeat,
     url(/assets/images/media-bg.jpg) no-repeat;
   background-size: contain, contain, cover;
+
+  @media (max-width: $lg) {
+    min-height: unset;
+  }
 }
 
 .media__container {
@@ -16,20 +20,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: $lg) {
+    margin-top: 0;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
 }
 
 .media__title {
   width: 45%;
+  min-width: 600px;
   font-size: 7.2em;
   font-family: "Captureit";
   color: white;
   font-weight: normal;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
+
+  @media (max-width: $lg) {
+    width: 100%;
+    min-width: unset;
+    margin-bottom: 0.5em;
+  }
 }
 
 .media__video {
   width: 55%;
+
+  @media (max-width: $lg) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .media__iframe {
@@ -37,4 +59,9 @@
   width: 560px;
   height: 315px;
   border: solid white 5px;
+
+  @media (max-width: $sm) {
+    width: 100%;
+    border: none;
+  }
 }

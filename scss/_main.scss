@@ -36,6 +36,9 @@
   background-image: url(/assets/images/title-bg.png);
   background-repeat: no-repeat;
   background-position: center;
+  @media (max-width: $xs) {
+    font-size: 25px;
+  }
 }
 
 .main__text {
