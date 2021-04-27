@@ -4,6 +4,10 @@ const BTN_SING_UP_PRICE = document.getElementById("price-sing-up");
 const MODAL_ABOUT = document.getElementById("modal-about");
 const CLOSE_BTN = document.getElementById("modal-about-close");
 const FORM = document.getElementById("form");
+const LEFT = document.getElementById("left");
+const RIGHT = document.getElementById("right");
+const SLIDES = document.querySelectorAll(".foto__image");
+let slideNumber = 0;
 
 function showModal() {
   MODAL_ABOUT.style.display = "flex";
@@ -14,6 +18,19 @@ function closeModalFromOutside(event) {
   if (event.target == MODAL_ABOUT) {
     closeModal();
   }
+}
+
+function switchSlide(event) {
+  SLIDES[slideNumber].classList.remove("active");
+  if (LEFT.querySelector("img") == event.target) {
+    slideNumber = slideNumber - 1;
+    if (slideNumber < 0) slideNumber = SLIDES.length - 1;
+  } else {
+    slideNumber = slideNumber + 1;
+    if (slideNumber >= SLIDES.length) slideNumber = 0;
+  }
+
+  SLIDES[slideNumber].classList.add("active");
 }
 
 function closeModal() {
@@ -48,4 +65,6 @@ BTN_ABOUT.addEventListener("click", showModal);
 BTN_SING_UP_SCHEDULE.addEventListener("click", showModal);
 BTN_SING_UP_PRICE.addEventListener("click", showModal);
 CLOSE_BTN.addEventListener("click", closeModal);
+LEFT.addEventListener("click", switchSlide);
+RIGHT.addEventListener("click", switchSlide);
 FORM.addEventListener("submit", sendEmail);
