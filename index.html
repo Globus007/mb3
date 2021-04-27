@@ -384,7 +384,9 @@
                 смена «PRO» возраст 10+
               </li>
             </ul>
-            <button class="schedule__btn btn">ЗАПИСАТЬСЯ В ЛАГЕРЬ</button>
+            <button class="schedule__btn btn" id="schedule-sing-up">
+              ЗАПИСАТЬСЯ В ЛАГЕРЬ
+            </button>
           </div>
           <h2 class="schedule__title">смены лета 2021</h2>
         </div>
@@ -448,7 +450,9 @@
           </a>
         </p>
 
-        <button class="price__btn btn">ЗАПИСАТЬСЯ В ЛАГЕРЬ</button>
+        <button class="price__btn btn" id="price-sing-up">
+          ЗАПИСАТЬСЯ В ЛАГЕРЬ
+        </button>
       </div>
     </section>
     <section class="media">
@@ -531,16 +535,19 @@
         <h2 class="modal__title">
           Заполните форму и получите полную программу лагеря
         </h2>
-        <form class="modal__form" action="">
+        <form class="modal__form" action="" id="form">
           <input
             class="modal__input"
             type="text"
             placeholder="Введите Ваше имя"
+            name="name"
+            required
           />
           <input
             class="modal__input"
             type="text"
             placeholder="Введите Ваш номер телефона"
+            name="phone"
             required
           />
           <input class="btn" type="submit" value="Получить программу лагеря" />
