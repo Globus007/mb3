@@ -40,10 +40,21 @@
 
 .main__text {
   text-align: center;
+  font-weight: bold;
   font-size: 3em;
   color: white;
 }
 
 .main__btn {
   text-align: center;
+}
+
+.main__down {
+  width: 30px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.main__img {
+  width: 100%;
 }

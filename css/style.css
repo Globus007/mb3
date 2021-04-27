@@ -82,7 +82,7 @@
 }
 
 .phone {
-  width: 210px;
+  width: 220px;
 }
 
 .phone__link {
@@ -169,6 +169,7 @@
 
 .main__text {
   text-align: center;
+  font-weight: bold;
   font-size: 3em;
   color: white;
 }
@@ -177,9 +178,21 @@
   text-align: center;
 }
 
+.main__down {
+  width: 30px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.main__img {
+  width: 100%;
+}
+
 .btn {
   width: 320px;
   height: 45px;
+  font-family: "ProximaNova";
+  font-weight: bold;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -758,6 +771,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
