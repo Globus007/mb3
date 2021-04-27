@@ -4,6 +4,10 @@
   position: fixed;
   z-index: 999;
   background-color: black;
+
+  @media (max-width: $sm) {
+    height: 50px;
+  }
 }
 
 .header__container {
@@ -58,5 +62,22 @@
   transition: opacity 0.2s;
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.logo__img {
+  width: 150px;
+  margin-left: 10px;
+  @media (max-width: $sm) {
+    display: none;
+  }
+}
+
+.logo__img--small {
+  width: 30px;
+  margin-left: 10px;
+  display: none;
+  @media (max-width: $sm) {
+    display: block;
   }
 }

@@ -2,6 +2,9 @@
   background-color: black;
   color: white;
   height: 100px;
+  @media (max-width: $sm) {
+    height: 50px;
+  }
 }
 
 .footer__container {
@@ -10,6 +13,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 50px;
+  @media (max-width: $sm) {
+    gap: 10px;
+  }
 }
 
 .footer__text {
@@ -21,6 +27,12 @@
     font-size: 1em;
     max-width: 300px;
   }
+  @media (max-width: $sm) {
+    max-width: unset;
+  }
+}
+
+.footer__phone {
   @media (max-width: $sm) {
     display: none;
   }

@@ -39,6 +39,12 @@
   background-color: black;
 }
 
+@media (max-width: 776px) {
+  .header {
+    height: 50px;
+  }
+}
+
 .header__container {
   height: 100%;
   width: 100%;
@@ -107,6 +113,29 @@
 
 .phone__img:hover {
   opacity: 0.8;
+}
+
+.logo__img {
+  width: 150px;
+  margin-left: 10px;
+}
+
+@media (max-width: 776px) {
+  .logo__img {
+    display: none;
+  }
+}
+
+.logo__img--small {
+  width: 30px;
+  margin-left: 10px;
+  display: none;
+}
+
+@media (max-width: 776px) {
+  .logo__img--small {
+    display: block;
+  }
 }
 
 .main {
@@ -187,7 +216,7 @@
 .main__down {
   width: 30px;
   position: absolute;
-  bottom: 10px;
+  bottom: 10%;
 }
 
 .main__img {
@@ -199,6 +228,7 @@
   height: 45px;
   font-family: "ProximaNova";
   font-weight: bold;
+  font-size: 18px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -473,6 +503,8 @@
 
 .command__card {
   width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .command__img {
@@ -799,6 +831,12 @@
   height: 100px;
 }
 
+@media (max-width: 776px) {
+  .footer {
+    height: 50px;
+  }
+}
+
 .footer__container {
   height: 100%;
   display: -webkit-box;
@@ -811,6 +849,12 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 50px;
+}
+
+@media (max-width: 776px) {
+  .footer__container {
+    gap: 10px;
+  }
 }
 
 .footer__text {
@@ -828,6 +872,12 @@
 
 @media (max-width: 776px) {
   .footer__text {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 776px) {
+  .footer__phone {
     display: none;
   }
 }
