@@ -11,6 +11,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1023px) {
+    flex-wrap: wrap;
+  }
 }
 
 .program__pin {

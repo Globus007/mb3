@@ -16,26 +16,29 @@
         <nav class="header__nav nav">
           <ul class="nav__ul">
             <li class="nav__li">
-              <a class="nav__link" href="#">Программа</a>
+              <a class="nav__link" href="#program">Программа</a>
             </li>
             <li class="nav__li">
-              <a class="nav__link" href="#">Команда</a>
+              <a class="nav__link" href="#command">Команда</a>
             </li>
             <li class="nav__li">
-              <a class="nav__link" href="#">Стоимость</a>
+              <a class="nav__link" href="#price">Стоимость</a>
             </li>
             <li class="nav__li">
-              <a class="nav__link" href="#">Смены</a>
+              <a class="nav__link" href="#schedule">Смены</a>
             </li>
             <li class="nav__li">
-              <a class="nav__link" href="#">Место проведения</a>
+              <a class="nav__link" href="#map">Место проведения</a>
             </li>
             <li class="nav__li">
-              <a class="nav__link" href="#">Отзывы</a>
+              <a class="nav__link" href="#foto">Отзывы</a>
             </li>
           </ul>
         </nav>
         <div class="header__phone phone">
+          <a href="viber://chat?number=+375296118252">
+            <img class="phone__img" src="/assets/icons/viber.svg" alt="viber" />
+          </a>
           <a class="phone__link" href="tel:+375296118252">+375 29 611-82-52</a>
         </div>
       </div>
@@ -46,12 +49,12 @@
         <p class="main__text">
           Палаточный лагерь для мальчиков со всей Беларуси
         </p>
-        <a
+        <!-- <a
           href="https://drive.google.com/file/d/1ecG1BDekUU2qK5X9MyvWZimQdAitVU21/view?usp=sharing"
           target="_blank"
-        >
-          <button class="main__btn btn">узнать подробнее</button>
-        </a>
+        > -->
+        <button class="main__btn btn" id="about">узнать подробнее</button>
+        <!-- </a> -->
       </div>
       <video class="main__video" loop muted autoplay>
         <source src="/assets/video/v1.mp4" type="video/mp4" />
@@ -171,6 +174,7 @@
       </div>
     </section>
     <section class="command">
+      <a name="command"></a>
       <div class="command__container container">
         <h2 class="command__title">Команда</h2>
         <div class="command__content">
@@ -387,6 +391,7 @@
       </div>
     </section>
     <section class="price">
+      <a name="price"></a>
       <div class="price__container container">
         <h2 class="price__title">Стоимость</h2>
         <p class="price__text">
@@ -438,7 +443,9 @@
         <p class="price__text">
           Задайте вопросы по оплате по телефону
           <a class="price__link" href="tel:+375296118252">+375 29 611 82 52</a>
-          <a href="viber://chat?number=+375296118252">viber</a>
+          <a href="viber://chat?number=+375296118252">
+            <img class="phone__img" src="/assets/icons/viber.svg" alt="viber" />
+          </a>
         </p>
 
         <button class="price__btn btn">ЗАПИСАТЬСЯ В ЛАГЕРЬ</button>
@@ -463,6 +470,7 @@
       </div>
     </section>
     <section class="foto">
+      <a name="foto"></a>
       <div class="foto__container container">
         <h2 class="foto__title">Фотогалерея</h2>
         <div class="foto__slider">
@@ -471,6 +479,7 @@
       </div>
     </section>
     <section class="map">
+      <a name="map"></a>
       <div class="map__container">
         <h2 class="map__title">МЕСТО ПРОВЕДЕНИЯ</h2>
         <p class="map__text">
@@ -506,9 +515,94 @@
           использования материалов, обращаться:  info@gorodsolnca.by
         </p>
         <div class="footer__phone phone">
+          <a href="viber://chat?number=+375296118252">
+            <img class="phone__img" src="/assets/icons/viber.svg" alt="viber" />
+          </a>
           <a class="phone__link" href="tel:+375296118252">+375 29 611-82-52</a>
         </div>
       </div>
     </footer>
+
+    <div class="modal" id="modal-about" aria-hidden="true">
+      <div class="modal__window">
+        <button data-hystclose class="modal__close" id="modal-about-close">
+          <img class="modal__img" src="/assets/icons/close.svg" alt="close" />
+        </button>
+        <h2 class="modal__title">
+          Заполните форму и получите полную программу лагеря
+        </h2>
+        <form class="modal__form" action="">
+          <input
+            class="modal__input"
+            type="text"
+            placeholder="Введите Ваше имя"
+          />
+          <input
+            class="modal__input"
+            type="text"
+            placeholder="Введите Ваш номер телефона"
+            required
+          />
+          <input class="btn" type="submit" value="Получить программу лагеря" />
+        </form>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(48595124, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        ecommerce: "dataLayer",
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/48595124"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-117945319-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-117945319-1");
+    </script>
   </body>
 </html>

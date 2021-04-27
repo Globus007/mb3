@@ -16,12 +16,15 @@
 
 .header__nav {
   width: 70%;
-  display: none;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .nav__ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .nav__li {
@@ -33,6 +36,10 @@
   color: white;
 }
 
+.phone {
+  width: 210px;
+}
+
 .phone__link {
   font-size: 2.2em;
   color: white;
@@ -40,5 +47,16 @@
 
   &:hover {
     color: orange;
+  }
+}
+
+.phone__img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.8;
   }
 }
