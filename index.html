@@ -57,10 +57,6 @@
         <p class="main__text">
           Палаточный лагерь для мальчиков со всей Беларуси
         </p>
-        <!-- <a
-          href="https://drive.google.com/file/d/1ecG1BDekUU2qK5X9MyvWZimQdAitVU21/view?usp=sharing"
-          target="_blank"
-        > -->
         <button class="main__btn btn" id="about">узнать подробнее</button>
       </div>
       <a class="main__down" href="#program">
@@ -559,6 +555,8 @@
             type="text"
             placeholder="Введите Ваше имя"
             name="name"
+            minlength="3"
+            maxlength="20"
             required
           />
           <input
@@ -566,6 +564,8 @@
             type="text"
             placeholder="Введите Ваш номер телефона"
             name="phone"
+            minlength="7"
+            maxlength="15"
             required
           />
           <input class="btn" type="submit" value="Получить программу лагеря" />
