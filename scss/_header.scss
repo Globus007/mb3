@@ -38,6 +38,12 @@
 .nav__link {
   font-size: 1.8em;
   color: white;
+
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: orange;
+  }
 }
 
 .phone {
