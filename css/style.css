@@ -85,6 +85,12 @@
 .nav__link {
   font-size: 1.8em;
   color: white;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.nav__link:hover {
+  color: orange;
 }
 
 .phone {
@@ -528,6 +534,15 @@
   margin-top: 10px;
   color: orange;
   font-size: 1.6em;
+  -webkit-transition: -webkit-filter 0.2s linear;
+  transition: -webkit-filter 0.2s linear;
+  transition: filter 0.2s linear;
+  transition: filter 0.2s linear, -webkit-filter 0.2s linear;
+}
+
+.command__link:hover {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
 }
 
 .schedule {
@@ -685,6 +700,15 @@
 
 .price__link {
   color: orange;
+  -webkit-transition: -webkit-filter 0.2s linear;
+  transition: -webkit-filter 0.2s linear;
+  transition: filter 0.2s linear;
+  transition: filter 0.2s linear, -webkit-filter 0.2s linear;
+}
+
+.price__link:hover {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
 }
 
 .price__btn {

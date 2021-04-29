@@ -42,6 +42,10 @@
 
 .price__link {
   color: orange;
+  transition: filter 0.2s linear;
+  &:hover {
+    filter: brightness(0.5);
+  }
 }
 
 .price__btn {

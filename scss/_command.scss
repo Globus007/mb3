@@ -43,4 +43,8 @@
   margin-top: 10px;
   color: orange;
   font-size: 1.6em;
+  transition: filter 0.2s linear;
+  &:hover {
+    filter: brightness(0.5);
+  }
 }
