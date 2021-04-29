@@ -1116,10 +1116,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-size: 10px;
   font-family: "ProximaNova";

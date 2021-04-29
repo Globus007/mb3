@@ -7,6 +7,7 @@ const FORM = document.getElementById("form");
 const LEFT = document.getElementById("left");
 const RIGHT = document.getElementById("right");
 const SLIDES = document.querySelectorAll(".foto__image");
+const ARCHORS = document.querySelectorAll('a[href*="#"]');
 let slideNumber = 0;
 
 function showModal() {
@@ -60,6 +61,35 @@ async function sendEmail(event) {
   );
   closeModal();
 }
+
+// smooth scroll
+ARCHORS.forEach((archor) => {
+  const speed = 0.2;
+  archor.addEventListener("click", (event) => {
+    event.preventDefault();
+    const linkName = archor.getAttribute("href").substr(1);
+    const offset =
+      document.querySelector(`a[name*=${linkName}]`).getBoundingClientRect()
+        .top - 80;
+    const windowOffset = window.pageYOffset;
+    requestAnimationFrame(step);
+    start = null;
+
+    function step(time) {
+      if (start === null) start = time;
+      let progress = time - start,
+        stepOffset =
+          offset < 0
+            ? Math.max(windowOffset - progress / speed, windowOffset + offset)
+            : Math.min(windowOffset + progress / speed, windowOffset + offset);
+      window.scrollTo(0, stepOffset);
+      if (stepOffset != windowOffset + offset) {
+        requestAnimationFrame(step);
+      } else {
+      }
+    }
+  });
+});
 
 BTN_ABOUT.addEventListener("click", showModal);
 BTN_SING_UP_SCHEDULE.addEventListener("click", showModal);
