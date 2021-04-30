@@ -46,6 +46,9 @@
 
 .about__info {
   width: 50%;
+  @media (max-width: $lg) {
+    margin-top: 50px;
+  }
   @media (max-width: $sm) {
     width: 95%;
   }

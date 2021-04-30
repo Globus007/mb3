@@ -21,6 +21,9 @@
   width: 200px;
   margin-left: 10px;
   margin-right: 10px;
+  @media (max-width: $xs) {
+    width: 100%;
+  }
 }
 
 .command__img {

@@ -190,6 +190,12 @@
           justify-content: space-between;
 }
 
+@media (max-width: 587px) {
+  .main__block {
+    height: 240px;
+  }
+}
+
 .main__title {
   width: 100%;
   font-size: 7.2em;
@@ -200,12 +206,6 @@
   background-image: url(/assets/images/title-bg.png);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-@media (max-width: 587px) {
-  .main__title {
-    font-size: 25px;
-  }
 }
 
 .main__text {
@@ -223,6 +223,12 @@
   width: 30px;
   position: absolute;
   bottom: 10%;
+}
+
+@media (max-width: 587px) {
+  .main__down {
+    bottom: 15%;
+  }
 }
 
 .main__img {
@@ -243,6 +249,12 @@
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 587px) {
+  .btn {
+    width: 95%;
+  }
 }
 
 .about {
@@ -308,6 +320,12 @@
 
 .about__info {
   width: 50%;
+}
+
+@media (max-width: 1199px) {
+  .about__info {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 776px) {
@@ -511,6 +529,12 @@
   width: 200px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+@media (max-width: 587px) {
+  .command__card {
+    width: 100%;
+  }
 }
 
 .command__img {
@@ -1052,6 +1076,12 @@
   transition: all 0.3s linear;
 }
 
+@media (max-width: 587px) {
+  .modal__window {
+    width: 95%;
+  }
+}
+
 .modal__window.sending::before {
   opacity: 1;
   visibility: visible;
@@ -1088,6 +1118,12 @@
   outline-color: orange;
 }
 
+@media (max-width: 587px) {
+  .modal__input {
+    width: 90%;
+  }
+}
+
 .modal__close {
   position: absolute;
   right: -15px;
@@ -1107,6 +1143,12 @@
 .modal__close:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media (max-width: 587px) {
+  .modal__close {
+    right: -5px;
+  }
 }
 
 .modal__img {
