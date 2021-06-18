@@ -5,19 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Детский палаточный лагерь Мужчина будущего</title>
-    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__container container">
         <div class="header__logo logo">
           <a href="/">
-            <img class="logo__img" src="/assets/icons/logo.svg" alt="logo" />
-            <img
-              class="logo__img--small"
-              src="/assets/icons/logo-min.svg"
-              alt="logo"
-            />
+            <img class="logo__img" src="./assets/icons/logo.svg" alt="logo" />
+            <img class="logo__img--small" src="./assets/icons/logo-min.svg" alt="logo" />
           </a>
         </div>
         <nav class="header__nav nav">
@@ -44,7 +39,7 @@
         </nav>
         <div class="header__phone phone">
           <a href="viber://chat?number=+375296118252">
-            <img class="phone__img" src="/assets/icons/viber.svg" alt="viber" />
+            <img class="phone__img" src="./assets/icons/viber.svg" alt="viber" />
           </a>
           <a class="phone__link" href="tel:+375296118252">+375 29 611-82-52</a>
         </div>
@@ -55,9 +50,7 @@
       <a name="top"></a>
       <div class="main__block">
         <h1 class="main__title">МУЖЧИНА БУДУЩЕГО​</h1>
-        <p class="main__text">
-          Палаточный лагерь для мальчиков со всей Беларуси
-        </p>
+        <p class="main__text">Палаточный лагерь для мальчиков со всей Беларуси</p>
         <button class="main__btn btn" id="about">узнать подробнее</button>
       </div>
       <a class="main__down" href="#about">
@@ -69,10 +62,10 @@
         muted
         autoplay
         playsinline
-        poster="assets/images/schedule-bg.jpg"
+        poster="./assets/images/schedule-bg.jpg"
       >
-        <source src="/assets/video/v1.mp4" type="video/mp4" />
-        <source src="/assets/video/v1.webm" type="video/webm" />
+        <source src="./assets/video/v1.mp4" type="video/mp4" />
+        <source src="./assets/video/v1.webm" type="video/webm" />
       </video>
     </main>
 
@@ -83,8 +76,8 @@
         <div class="about__content">
           <div class="about__video">
             <iframe
-              class="about__iframe"
-              src="https://www.youtube.com/embed/gNDE8RmlwpU"
+              class="about__iframe lazyload"
+              data-src="https://www.youtube.com/embed/gNDE8RmlwpU"
               title="Мужчина будущего"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -92,31 +85,21 @@
             ></iframe>
           </div>
           <div class="about__info">
-            <h3 class="about__h3">
-              Специальный проект для мужчин в возрасте 8-17 лет
-            </h3>
+            <h3 class="about__h3">Специальный проект для мужчин в возрасте 8-17 лет</h3>
             <p class="about__text">
-              Это 6 удивительных дней, которые покажутся месяцем и подарят
-              ребятам то, что им так необходимо в этом возрасте:
+              Это 6 удивительных дней, которые покажутся месяцем и подарят ребятам то, что им так
+              необходимо в этом возрасте:
             </p>
             <ul class="about__ul">
-              <li class="about__li">
-                авторитетное мужское общение с удивительными личностями;
-              </li>
+              <li class="about__li">авторитетное мужское общение с удивительными личностями;</li>
               <li class="about__li">
                 развитие мужских качеств характера, поддержка личностного роста;
               </li>
               <li class="about__li">обретение мужских умений и навыков;</li>
-              <li class="about__li">
-                приключения, дружба и бурная жизнь на природе;
-              </li>
+              <li class="about__li">приключения, дружба и бурная жизнь на природе;</li>
               <li class="about__li">возможность проявить себя;</li>
-              <li class="about__li">
-                здоровый образ жизни в веселой и привлекательной форме;
-              </li>
-              <li class="about__li">
-                атмосфера доверия и уважения к взрослеющей личности.
-              </li>
+              <li class="about__li">здоровый образ жизни в веселой и привлекательной форме;</li>
+              <li class="about__li">атмосфера доверия и уважения к взрослеющей личности.</li>
             </ul>
           </div>
         </div>
@@ -137,9 +120,7 @@
           </div>
           <div class="program__pin">
             <img src="assets/images/pin03.png" alt="pin" />
-            <p class="program__pin-text">
-              русская баня и курс поддержания здоровья
-            </p>
+            <p class="program__pin-text">русская баня и курс поддержания здоровья</p>
           </div>
           <div class="program__pin">
             <img src="assets/images/pin04.png" alt="pin" />
@@ -158,15 +139,9 @@
               <ul>
                 <li class="program__li">Веревочный городок</li>
                 <li class="program__li">«Алле, гараж» (автомастерская)</li>
-                <li class="program__li">
-                  «Звезды на погонах» (аналог Зарницы)
-                </li>
-                <li class="program__li">
-                  «PUGB» (военно-тактическая игра по сценарию)
-                </li>
-                <li class="program__li">
-                  «Путь воина» (спортивно-развлекательная игра)
-                </li>
+                <li class="program__li">«Звезды на погонах» (аналог Зарницы)</li>
+                <li class="program__li">«PUGB» (военно-тактическая игра по сценарию)</li>
+                <li class="program__li">«Путь воина» (спортивно-развлекательная игра)</li>
                 <li class="program__li">«Первый рыцарь» (рыцарский турнир)</li>
                 <li class="program__li">и ещё много всего...</li>
               </ul>
@@ -176,9 +151,7 @@
               <h3 class="program__h3">Смена «PRO»:</h3>
               <ul>
                 <li class="program__li">«Схватка» (ночной квест)</li>
-                <li class="program__li">
-                  «АКВАМЭНЫ» (поход 15 км на байдарках)
-                </li>
+                <li class="program__li">«АКВАМЭНЫ» (поход 15 км на байдарках)</li>
                 <li class="program__li">«S.T.A.L.K.E.R.» (квест в ЗАБРОШКЕ)</li>
                 <li class="program__li">«Дикий остров» (игра на выживание)</li>
                 <li class="program__li">Время испытаний «крепче стали»</li>
@@ -196,42 +169,25 @@
         <h2 class="command__title">Команда</h2>
         <div class="command__content">
           <div class="command__card">
-            <img
-              class="command__img"
-              src="assets/images/command01.jpg"
-              alt="foto"
-            />
+            <img class="command__img" src="assets/images/command01.jpg" alt="foto" />
             <h3 class="command__h3">Дмитрий Шуканов​</h3>
             <ul class="command__ul">
               <li class="command__li">
-                Педагог, психолог, тренер, руководитель летних проектов для
-                мальчиков
+                Педагог, психолог, тренер, руководитель летних проектов для мальчиков
               </li>
               <li class="command__li">Руководитель центра "Друзья"</li>
               <li class="command__li">Опыт работы с детьми более 25 лет</li>
             </ul>
-            <a
-              class="command__link"
-              href="https://www.instagram.com/d_shukanov/"
-              target="_blank"
-            >
+            <a class="command__link" href="https://www.instagram.com/d_shukanov/" target="_blank">
               @d_shukanov
             </a>
           </div>
           <div class="command__card">
-            <img
-              class="command__img"
-              src="assets/images/command02.jpg"
-              alt="foto"
-            />
+            <img class="command__img" src="assets/images/command02.jpg" alt="foto" />
             <h3 class="command__h3">Юрий Омельянович​</h3>
             <ul class="command__ul">
-              <li class="command__li">
-                Отец, бизнесмен, тренер по детскому фитнесу
-              </li>
-              <li class="command__li">
-                Преподаватель и инструктор на детских проектах
-              </li>
+              <li class="command__li">Отец, бизнесмен, тренер по детскому фитнесу</li>
+              <li class="command__li">Преподаватель и инструктор на детских проектах</li>
               <li class="command__li">Практикует смешанные единоборства</li>
             </ul>
             <a
@@ -243,20 +199,12 @@
             </a>
           </div>
           <div class="command__card">
-            <img
-              class="command__img"
-              src="assets/images/command03.jpg"
-              alt="foto"
-            />
+            <img class="command__img" src="assets/images/command03.jpg" alt="foto" />
             <h3 class="command__h3">Филиппов Андрей​</h3>
             <ul class="command__ul">
               <li class="command__li">Опыт работы с детьми: 6 лет</li>
-              <li class="command__li">
-                Воспитатель в частном детском садике "Сказка"
-              </li>
-              <li class="command__li">
-                Педагог дополнительного образования в школе "Наследие"
-              </li>
+              <li class="command__li">Воспитатель в частном детском садике "Сказка"</li>
+              <li class="command__li">Педагог дополнительного образования в школе "Наследие"</li>
             </ul>
             <a
               class="command__link"
@@ -267,95 +215,56 @@
             </a>
           </div>
           <div class="command__card">
-            <img
-              class="command__img"
-              src="assets/images/command04.jpg"
-              alt="foto"
-            />
+            <img class="command__img" src="assets/images/command04.jpg" alt="foto" />
             <h3 class="command__h3">Комаров Максим​</h3>
             <ul class="command__ul">
-              <li class="command__li">
-                Инструктор по физической культуре и спорту
-              </li>
+              <li class="command__li">Инструктор по физической культуре и спорту</li>
               <li class="command__li">
                 Воспитатель (вожатый) педагогического отряда "Ветразь" БГПУ
               </li>
               <li class="command__li">Спортивный тренер по дзюдо</li>
             </ul>
-            <a
-              class="command__link"
-              href="https://www.instagram.com/maxkomar/"
-              target="_blank"
-            >
+            <a class="command__link" href="https://www.instagram.com/maxkomar/" target="_blank">
               @maxkomar
             </a>
           </div>
           <div class="command__card">
-            <img
-              class="command__img"
-              src="assets/images/command05.jpg"
-              alt="foto"
-            />
+            <img class="command__img" src="assets/images/command05.jpg" alt="foto" />
             <h3 class="command__h3">Войтко Александр​</h3>
             <ul class="command__ul">
               <li class="command__li">
                 Инструктор по физической культуре и спорту в частной школе
               </li>
-              <li class="command__li">
-                Вожатый детского оздоровительного лагеря
-              </li>
+              <li class="command__li">Вожатый детского оздоровительного лагеря</li>
               <li class="command__li">Тренер по плаванию</li>
             </ul>
           </div>
           <div class="command__card">
-            <img
-              class="command__img"
-              src="assets/images/command06.jpg"
-              alt="foto"
-            />
+            <img class="command__img" src="assets/images/command06.jpg" alt="foto" />
             <h3 class="command__h3">Климович Руслан​</h3>
             <ul class="command__ul">
-              <li class="command__li">
-                Тренер-преподаватель тематических проектов для мальчиков
-              </li>
+              <li class="command__li">Тренер-преподаватель тематических проектов для мальчиков</li>
               <li class="command__li">Инструктор по восточным единоборствам</li>
-              <li class="command__li">
-                Ковка, работа с металлом, резьба по дереву
-              </li>
+              <li class="command__li">Ковка, работа с металлом, резьба по дереву</li>
             </ul>
           </div>
           <div class="command__card">
-            <img
-              class="command__img"
-              src="assets/images/command07.jpg"
-              alt="foto"
-            />
+            <img class="command__img" src="assets/images/command07.jpg" alt="foto" />
             <h3 class="command__h3">Савкин Данила</h3>
             <ul class="command__ul">
-              <li class="command__li">
-                Воспитатель начальной школы "Наследие"
-              </li>
+              <li class="command__li">Воспитатель начальной школы "Наследие"</li>
               <li class="command__li">Инструктор по тимбилдингу</li>
-              <li class="command__li">
-                Ассистент тренера тематических детских проектов
-              </li>
+              <li class="command__li">Ассистент тренера тематических детских проектов</li>
             </ul>
           </div>
           <div class="command__card">
-            <img
-              class="command__img"
-              src="assets/images/command08.jpg"
-              alt="foto"
-            />
+            <img class="command__img" src="assets/images/command08.jpg" alt="foto" />
             <h3 class="command__h3">Боровский Тимофей​</h3>
             <ul class="command__ul">
               <li class="command__li">
-                Помощник вожатого в летних палаточных лагерях «Мужчина будущего»
-                и «Герои»
+                Помощник вожатого в летних палаточных лагерях «Мужчина будущего» и «Герои»
               </li>
-              <li class="command__li">
-                Ассистент тренера тематических детских проектов
-              </li>
+              <li class="command__li">Ассистент тренера тематических детских проектов</li>
             </ul>
           </div>
         </div>
@@ -368,43 +277,32 @@
         <div class="schedule__content">
           <div class="schedule__text">
             <ul class="schedule__ul">
+              <li class="schedule__li">смена №1 «SMART» – с 13 июня по 18 июня</li>
+              <li class="schedule__li">смена №2 «PRO» – с 20 июня по 25 июня</li>
+              <li class="schedule__li">смена №3 «SMART» – с 27 июня по 02 июля</li>
               <li class="schedule__li">
-                смена №1 «SMART» – с 13 июня по 18 июня
+                <a
+                  class="price__link"
+                  href="https://www.instagram.com/p/CPVfiAnBOHi"
+                  target="_blank"
+                >
+                  START ПАП – с 04 июля по 09 июля</a
+                >
               </li>
-              <li class="schedule__li">
-                смена №2 «PRO» – с 20 июня по 25 июня
-              </li>
-              <li class="schedule__li">
-                смена №3 «SMART» – с 27 июня по 02 июля
-              </li>
-              <li class="schedule__li">
-                смена №4 «PRO» – с 04 июля по 09 июля
-              </li>
-              <li class="schedule__li">
-                смена №5 «SMART» – с 11 июля по 16 июля
-              </li>
-              <li class="schedule__li">
-                смена №6 «PRO» – с 18 июля по 23 июля
-              </li>
-              <li class="schedule__li">
-                смена №7 «SMART» – с 25 июля по 30 июля
-              </li>
+              <li class="schedule__li">смена №5 «SMART» – с 11 июля по 16 июля</li>
+              <li class="schedule__li">смена №6 «PRO» – с 18 июля по 23 июля</li>
+              <li class="schedule__li">смена №7 «SMART» – с 25 июля по 30 июля</li>
+              <li class="schedule__li">смена №8 «SMART» – с 1 августа по 6 августа</li>
               <li class="schedule__li schedule__li--info">
                 старт каждой смены: 12.00 в воскресение
               </li>
               <li class="schedule__li schedule__li--info">
                 окончание каждой смены: 18.00 в пятницу
               </li>
-              <li class="schedule__li schedule__li--info">
-                смена «SMART» возраст 8-16 лет
-              </li>
-              <li class="schedule__li schedule__li--info">
-                смена «PRO» возраст 10-16 лет
-              </li>
+              <li class="schedule__li schedule__li--info">смена «SMART» возраст 8-16 лет</li>
+              <li class="schedule__li schedule__li--info">смена «PRO» возраст 10-16 лет</li>
             </ul>
-            <button class="schedule__btn btn" id="schedule-sing-up">
-              ЗАПИСАТЬСЯ В ЛАГЕРЬ
-            </button>
+            <button class="schedule__btn btn" id="schedule-sing-up">ЗАПИСАТЬСЯ В ЛАГЕРЬ</button>
           </div>
           <h2 class="schedule__title">смены лета 2021</h2>
         </div>
@@ -415,12 +313,8 @@
       <a name="price"></a>
       <div class="price__container container">
         <h2 class="price__title">Стоимость</h2>
-        <p class="price__text">
-          <span class="price__number">450 руб</span> - смена «SMART»
-        </p>
-        <p class="price__text">
-          <span class="price__number">600 руб</span> - смена «PRO»
-        </p>
+        <p class="price__text"><span class="price__number">450 руб</span> - смена «SMART»</p>
+        <p class="price__text"><span class="price__number">600 руб</span> - смена «PRO»</p>
         <h3 class="price__h3">Для бронирования места необходимо:</h3>
         <ol class="price__ol">
           <li class="price__li">
@@ -434,44 +328,33 @@
             </a>
           </li>
           <li class="price__li">
-            Оплатить 30% стоимости (оставшиеся 70% вносятся не позднее, чем за
-            14 календарных дней до начала смены)
+            Оплатить 30% стоимости (оставшиеся 70% вносятся не позднее, чем за 14 календарных дней
+            до начала смены)
           </li>
         </ol>
         <p class="price__text">
-          *При одностороннем отказе родителя от бронирования возвращаем 50%
-          стоимости. <br />
-          *При вынужденном отказе в связи с болезнью ребёнка есть возможность
-          перенести оплату на любую другую смену.
+          *При одностороннем отказе родителя от бронирования возвращаем 50% стоимости. <br />
+          *При вынужденном отказе в связи с болезнью ребёнка есть возможность перенести оплату на
+          любую другую смену.
         </p>
         <h3 class="price__h3">Скидки:</h3>
         <ul class="price__ul">
           <li class="price__li">10% на второго ребёнка из семьи</li>
-          <li class="price__li">
-            10% для многодетных семей на одного из детей
-          </li>
-          <li class="price__li">
-            10% при единовременной оплате за 2 и более смен
-          </li>
-          <li class="price__li">
-            10% детям, обучающимся в школе "ГОРОД СОЛНЦА"
-          </li>
+          <li class="price__li">10% для многодетных семей на одного из детей</li>
+          <li class="price__li">10% при единовременной оплате за 2 и более смен</li>
+          <li class="price__li">10% детям, обучающимся в школе "ГОРОД СОЛНЦА"</li>
           <li class="price__li">10% участникам курсов "СТАЛЬ И БАРХАТ"</li>
-          <li class="price__li">
-            10% участникам групповых занятий в центре "ДРУЗЬЯ"
-          </li>
+          <li class="price__li">10% участникам групповых занятий в центре "ДРУЗЬЯ"</li>
         </ul>
         <p class="price__text">
           Задайте вопросы по оплате по телефону
           <a class="price__link" href="tel:+375296118252">+375 29 611 82 52</a>
           <a href="viber://chat?number=+375296118252">
-            <img class="phone__img" src="/assets/icons/viber.svg" alt="viber" />
+            <img class="phone__img" src="./assets/icons/viber.svg" alt="viber" />
           </a>
         </p>
 
-        <button class="price__btn btn" id="price-sing-up">
-          ЗАПИСАТЬСЯ В ЛАГЕРЬ
-        </button>
+        <button class="price__btn btn" id="price-sing-up">ЗАПИСАТЬСЯ В ЛАГЕРЬ</button>
       </div>
     </section>
 
@@ -482,8 +365,8 @@
           <h2 class="media__title">о нас в сми</h2>
           <div class="media__video">
             <iframe
-              class="media__iframe"
-              src="https://www.youtube.com/embed/t9_PVGiDpCw"
+              class="media__iframe lazyload"
+              data-src="https://www.youtube.com/embed/t9_PVGiDpCw"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -500,27 +383,19 @@
         <h2 class="foto__title">Фотогалерея</h2>
         <div class="foto__slider" id="slider">
           <button class="foto__btn foto__btn--left" id="left">
-            <img class="foto__arrow" src="/assets/icons/left.svg" alt="left" />
+            <img class="foto__arrow" src="./assets/icons/left.svg" alt="left" />
           </button>
-          <img
-            class="foto__image active"
-            src="assets/images/foto01.jpg"
-            alt="pic"
-          />
-          <img class="foto__image" src="assets/images/foto02.jpg" alt="pic" />
-          <img class="foto__image" src="assets/images/foto03.jpg" alt="pic" />
-          <img class="foto__image" src="assets/images/foto04.jpg" alt="pic" />
-          <img class="foto__image" src="assets/images/foto05.jpg" alt="pic" />
-          <img class="foto__image" src="assets/images/foto06.jpg" alt="pic" />
-          <img class="foto__image" src="assets/images/foto07.jpg" alt="pic" />
-          <img class="foto__image" src="assets/images/foto08.jpg" alt="pic" />
-          <img class="foto__image" src="assets/images/foto09.jpg" alt="pic" />
+          <img class="foto__image active" src="./assets/images/foto01.jpg" alt="pic" />
+          <img class="foto__image" src="./assets/images/foto02.jpg" alt="pic" />
+          <img class="foto__image" src="./assets/images/foto03.jpg" alt="pic" />
+          <img class="foto__image" src="./assets/images/foto04.jpg" alt="pic" />
+          <img class="foto__image" src="./assets/images/foto05.jpg" alt="pic" />
+          <img class="foto__image" src="./assets/images/foto06.jpg" alt="pic" />
+          <img class="foto__image" src="./assets/images/foto07.jpg" alt="pic" />
+          <img class="foto__image" src="./assets/images/foto08.jpg" alt="pic" />
+          <img class="foto__image" src="./assets/images/foto09.jpg" alt="pic" />
           <button class="foto__btn foto__btn--right" id="right">
-            <img
-              class="foto__arrow"
-              src="/assets/icons/right.svg"
-              alt="right"
-            />
+            <img class="foto__arrow" src="./assets/icons/right.svg" alt="right" />
           </button>
         </div>
       </div>
@@ -530,19 +405,18 @@
       <div class="map__container">
         <h2 class="map__title">МЕСТО ПРОВЕДЕНИЯ</h2>
         <p class="map__text">
-          Программа лагеря проходит в 20 км от Минска (Гродненское направление),
-          между Аксаковщиной и Новым полем. На 9 га земли с собственным озером,
-          островами, молодым сосновым лесом располагается территория
-          образовательного комплекса «Город Солнца».
+          Программа лагеря проходит в 20 км от Минска (Гродненское направление), между Аксаковщиной
+          и Новым полем. На 9 га земли с собственным озером, островами, молодым сосновым лесом
+          располагается территория образовательного комплекса «Город Солнца».
         </p>
         <p class="map__text">
-          20 км - это расстояние, которое позволяет приехать за ребёнком в любое
-          время в случае острой необходимости.
+          20 км - это расстояние, которое позволяет приехать за ребёнком в любое время в случае
+          острой необходимости.
         </p>
         <p class="map__text">К детям ездить не обязательно, но можно)</p>
         <iframe
-          class="map__iframe"
-          src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d122008.10401762475!2d27.237608364024958!3d53.94133489988399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d53.9113042!2d27.409284099999997!4m5!1s0x46dbe669410b94e1%3A0x3146c3d59dac6e28!2z0JPQvtGA0L7QtCDRgdC-0LvQvdGG0LA!3m2!1d53.959016899999995!2d27.1220887!5e0!3m2!1sru!2sby!4v1523948137568"
+          class="map__iframe lazyload"
+          data-src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d122008.10401762475!2d27.237608364024958!3d53.94133489988399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d53.9113042!2d27.409284099999997!4m5!1s0x46dbe669410b94e1%3A0x3146c3d59dac6e28!2z0JPQvtGA0L7QtCDRgdC-0LvQvdGG0LA!3m2!1d53.959016899999995!2d27.1220887!5e0!3m2!1sru!2sby!4v1523948137568"
           frameborder="0"
           style="border: 0"
           allowfullscreen=""
@@ -554,24 +428,19 @@
       <div class="footer__container container">
         <div class="logo">
           <a href="/">
-            <img class="logo__img" src="/assets/icons/logo.svg" alt="logo" />
-            <img
-              class="logo__img--small"
-              src="/assets/icons/logo-min.svg"
-              alt="logo"
-            />
+            <img class="logo__img" src="./assets/icons/logo.svg" alt="logo" />
+            <img class="logo__img--small" src="./assets/icons/logo-min.svg" alt="logo" />
           </a>
         </div>
         <p class="footer__text">
-          Все права защищены © 2016-2021 "Учреждение образования
-          "Учебно-педагогический комплекс детский сад - средняя школа Город
-          Солнца". Использование материалов и содержания сайта допускается
-          только в личных целях. По вопросам сотрудничества или коммерческого
+          Все права защищены © 2016-2021 "Учреждение образования "Учебно-педагогический комплекс
+          детский сад - средняя школа Город Солнца". Использование материалов и содержания сайта
+          допускается только в личных целях. По вопросам сотрудничества или коммерческого
           использования материалов, обращаться:  info@gorodsolnca.by
         </p>
         <div class="footer__phone phone">
           <a href="viber://chat?number=+375296118252">
-            <img class="phone__img" src="/assets/icons/viber.svg" alt="viber" />
+            <img class="phone__img" src="./assets/icons/viber.svg" alt="viber" />
           </a>
           <a class="phone__link" href="tel:+375296118252">+375 29 611-82-52</a>
         </div>
@@ -581,11 +450,9 @@
     <div class="modal" id="modal-about" aria-hidden="true">
       <div class="modal__window">
         <button data-hystclose class="modal__close" id="modal-about-close">
-          <img class="modal__img" src="/assets/icons/close.svg" alt="close" />
+          <img class="modal__img" src="./assets/icons/close.svg" alt="close" />
         </button>
-        <h2 class="modal__title">
-          Заполните форму и получите полную программу лагеря
-        </h2>
+        <h2 class="modal__title">Заполните форму и получите полную программу лагеря</h2>
         <form class="modal__form ym-record-keys" action="" id="form">
           <input
             class="modal__input"
@@ -626,20 +493,14 @@
           (k.async = 1),
           (k.src = r),
           a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
 
-      ym(48595124, "init", {
+      ym(48595124, 'init', {
         clickmap: true,
         trackLinks: true,
         accurateTrackBounce: true,
         webvisor: true,
-        ecommerce: "dataLayer",
+        ecommerce: 'dataLayer',
       });
     </script>
     <noscript
@@ -653,18 +514,15 @@
     <!-- /Yandex.Metrika counter -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-117945319-1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117945319-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "UA-117945319-1");
+      gtag('config', 'UA-117945319-1');
     </script>
   </body>
 </html>

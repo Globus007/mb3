@@ -6,6 +6,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: $xs) {
+    background: url(../assets/images/schedule-bg.jpg) no-repeat;
+    background-size: cover;
+  }
 }
 
 .main__video {
@@ -15,6 +19,9 @@
   left: 0;
   top: 0;
   z-index: -1;
+  @media (max-width: $xs) {
+    display: none;
+  }
 }
 
 .main__block {
@@ -33,7 +40,7 @@
   width: 100%;
   font-size: 7.2em;
   color: white;
-  font-family: "Captureit";
+  font-family: 'Captureit';
   font-weight: normal;
   text-align: center;
   background-image: url(/assets/images/title-bg.png);
